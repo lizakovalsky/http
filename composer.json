@@ -1,0 +1,15 @@
+{
+    "name": "justduck/auth-app",
+    "autoload": {
+        "psr-4": {
+            "Justduck\\AuthApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lizakovalsky",
+            "email": "karandashbabki@gmail.com"
+        }
+    ],
+    "require": {}
+}
