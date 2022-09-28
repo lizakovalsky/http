@@ -1,14 +1,12 @@
 {
-    "Accounts":  [{
-        "id": 1,
-        "login": "Adminn",
-        "password": "32346017596df82d55717c07a96dcf86",
-        "confirm_password": "32346017596df82d55717c07a96dcf86",
-        "email": "example@mail.com",
-        "name": "Admin"
-    }
-
-    
+    "accounts": [
+        {
+            "id": 1,
+            "login": "Adminn",
+            "password": "32346017596df82d55717c07a96dcf86",
+            "confirm_password": "32346017596df82d55717c07a96dcf86",
+            "email": "example@mail.com",
+            "name": "Admin"
+        }
     ]
-
 }

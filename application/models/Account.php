@@ -5,25 +5,13 @@ namespace application\models;
 use application\lib\Db;
 use application\core\Model;
 
-class Account extends Model
+class Account
 {
-    //тут реализация функций аккаунтов
-    public $login;
-    public $password;
-    public $email;
-    public $name;
+    //тут реализация функций аккаунтоd
+
 
     public function __construct()
     {
-    }
-
-    public function toArray()
-    {
-        return [
-            'login' => $this->login,
-            'password' => $this->passwors,
-            'email' => $this->email,
-            'name' => $this->name
-        ];
+        $model = new Model;
     }
 }
