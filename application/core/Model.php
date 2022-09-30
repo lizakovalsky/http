@@ -49,14 +49,5 @@ class Model
         ];
     }
 
-    public function fetchDB($collection)
-    {
-        $db = [
-            'accounts' => $collection
-        ];
-
-        $handle = fopen('db.json', 'w+');
-        fwrite($handle, json_encode($this->toArray($collection)));
-        fclose($handle);
-    }
+    
 }

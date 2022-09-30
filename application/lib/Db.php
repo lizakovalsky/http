@@ -16,15 +16,26 @@ class DataBase
         $model = new Model;
     }
 
+    public function fetchDB($collection)
+    {
+        $db = [
+            'accounts' => $collection
+        ];
+
+        $handle = fopen('db.json', 'w+');
+        fwrite($handle, json_encode($this->model->toArray($collection)));
+        fclose($handle);
+    }
+
     public function addAccount(Account $account)
     {
         $collection = $this->model->getCollection();
         $collection[] = $account;
-        $this->model->fetchDB($collection);
+        $this->fetchDB($collection);
     }
     public function deleteAccount(Account $account)
     {
         $collection = $this->model->getCollection();
-        $this->model->fetchDB($collection);
+        $this->fetchDB($collection);
     }
 }
